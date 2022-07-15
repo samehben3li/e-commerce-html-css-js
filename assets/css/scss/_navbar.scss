@@ -1,0 +1,53 @@
+nav {
+    background-color: black;
+    color: white;
+    padding: 20px 50px;
+
+    .top {
+        @include flexItemCentre();
+        justify-content: space-between;
+
+        .item {
+            .logo {
+                font-size: 32px;
+                font-weight: 900;
+                padding: 20px;
+                cursor: pointer;
+            }
+
+            .search {
+                @include flexItemCentre();
+                background-color: gray;
+                padding: 10px 20px;
+                border-radius: 10px;
+
+                .input {
+                    border: none;
+                    background-color: transparent;
+
+                    &::placeholder {
+                        color: lightgray;
+                    }
+                }
+            }
+
+            .offer {
+                font-size: 20px;
+                border-bottom: 2px solid green;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .bottom {
+        @include flexItemCentre();
+        justify-content: center;
+
+        .item {
+            margin-right: 50px;
+            cursor: pointer;
+            color: lightgray;
+            font-weight: 400;
+        }
+    }
+}

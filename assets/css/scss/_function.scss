@@ -1,0 +1,10 @@
+@mixin flexItemCentre {
+    display: flex;
+    align-items: center;
+}
+
+@mixin circul($x) {
+    width: $x;
+    height: $x;
+    border-radius: 50%;
+}

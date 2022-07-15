@@ -1,0 +1,68 @@
+footer{
+    display: flex;
+
+    .left{
+        flex: 2;
+        display: flex;
+        justify-content: space-between;
+        padding: 50px;
+
+        .menu{
+            
+            .title{
+                font-size: 16px;
+            }
+
+            .list{
+                padding: 0;
+                list-style: none;
+
+                .item{
+                    margin-bottom: 10px;
+                    color: gray;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .right{
+        flex: 1;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .menu{
+
+            .mail{
+
+                .input{
+                    padding: 5px;
+                }
+    
+                .btn{
+                    padding: 5px;
+                    background-color: black;
+                    color: #fff;
+                }
+            }
+
+            .icons{
+                display: flex;
+
+                .img{
+                    width: 20px;
+                    height: 20px;
+                    margin-right: 10px;
+                    cursor: pointer;
+                }
+            }
+
+            .copyright{
+                font-weight: 300;
+                font-size: 14px;
+            }
+        }
+    }
+}

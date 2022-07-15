@@ -1,0 +1,123 @@
+@media screen and (max-width:480px) {
+    nav{
+        padding: 20px;
+        
+        .top{
+            .item{
+                .search{
+                    display: none;
+                }
+            }
+        }
+        
+        .bottom{
+            flex-wrap: wrap;
+            .item{
+                margin: 20px;
+                font-weight: 700;
+                font-size: 20px;
+            }
+        }
+    }
+
+    .slider{
+        clip-path: none;
+
+        .wrapper{
+
+            .item{
+
+                .bg{
+                    width: 100%;
+                    height: 100%;
+                }
+
+                .img{
+                    width: 90%;
+                }
+
+                .title{
+                    display: none;
+                }
+
+                .price{
+                    top: unset;
+                    bottom: -50px;
+                    left: 0;
+                    background-color: lightgray;
+                }
+
+                .buy{
+                    bottom: 0;
+                    right: 0;
+                    top: unset;
+                }
+            }
+        }
+    }
+    
+    .features{
+        flex-direction: column;
+    }
+
+    .product{
+        clip-path: none;
+        @include flexItemCentre();
+        flex-direction: column;
+
+        .img{
+            width: 80%;
+        }
+
+        .details{
+            width: 100%;
+            padding: 0;
+            @include flexItemCentre();
+            text-align: center;
+            flex-direction: column;
+            position: relative;
+            top: 0;
+
+            .title{
+                font-size: 50px;
+                margin: 0;
+            }
+        }
+    }
+
+    .gallery{
+        display: none;
+    }
+
+    .season{
+        flex-direction: column;
+
+        .item{
+            &:nth-child(2){
+                padding: 50px;
+            }
+        }
+    }
+
+    footer{
+        flex-direction: column;
+        align-items: center;
+
+        .left{
+            padding: 20px;
+            width: 90%;
+        }
+
+        .right{
+            padding: 20px;
+            width: 90%;
+            align-items: center;
+            background-color: whitesmoke;
+
+            .mail{
+                align-items: center;
+            }
+
+        }
+    }
+}

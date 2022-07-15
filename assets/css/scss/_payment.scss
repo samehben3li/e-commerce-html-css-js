@@ -1,0 +1,85 @@
+.payment{
+    width: 500px;
+    height: 500px;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 10px 50px;
+    display: none;
+    flex-direction: column;
+    -webkit-box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
+
+    .title{
+        font-size: 20px;
+        color: lightgray;
+    }
+
+    lable{
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    .input{
+        padding: 10px;
+        margin: 10px 0;
+        border: none;
+        border-bottom: 1px solid gray;
+        
+        &::placeholder{
+            color: rgb(163,163,163);
+        }
+    }
+
+    .cards{
+        display: flex;
+
+        .icon{
+            width: 40px;
+            margin-right: 10px;
+        }
+    }
+
+    .info{
+        display: flex;
+        justify-content: space-between;
+
+        .input{
+            &.sm{
+                width: 30%;
+            }
+        }
+    }
+
+    .btn{
+        position: absolute;
+        height: 40px;
+        bottom: -40px;
+        left: 0;
+        width: 100%;
+        -webkit-box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
+        box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
+        background-color: #369e62;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+
+    .close{
+        @include circul(20px);
+        position: absolute;
+        background-color: gray;
+        color: #fff;
+        top: 10px;
+        right: 10px;
+        @include flexItemCentre();
+        justify-content: center;
+        cursor: pointer;
+        padding: 2px;
+    }
+
+}

@@ -1,0 +1,13 @@
+.gallery{
+    padding: 50px;
+    display: flex;
+
+    .item{
+        flex: 1;
+        padding: 50px;
+
+        .img{
+            width: 100%;
+        }
+    }
+}

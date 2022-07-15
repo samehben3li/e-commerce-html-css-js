@@ -1,0 +1,118 @@
+.slider {
+    background: url("https://images.unsplash.com/photo-1604147495798-57beb5d6af73?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80");
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+    overflow: hidden;
+
+    .wrapper{
+        display: flex;
+        width: 500vw;
+        transition: all 1.5s ease-in-out;
+
+        .item{
+            width: 100vw;
+            @include flexItemCentre();
+            justify-content: center;
+            position: relative;
+
+            .bg{
+                @include circul(750px);
+                position: absolute;
+            }
+
+            .img{
+                z-index: 1;
+            }
+
+            .title{
+                position: absolute;
+                top: 10%;
+                right: 10%;
+                color: white;
+                font-size: 60px;
+                font-weight: 900;
+                text-align: center;
+                z-index: 1;
+            }
+
+            .price{
+                position: absolute;
+                top: 10%;
+                left: 10%;
+                font-size: 60px;
+                font-weight: 300;
+                text-align: center;
+                color: white;
+                border: 1px solid gray;
+                z-index: 1;
+            }
+
+            .buy{
+                position: absolute;
+                top: 50%;
+                right: 10%;
+                font-size: 30px;
+                font-weight: 900;
+                color: white;
+                background-color: black;
+                border: 1px solid gray;
+                z-index: 1;
+                cursor: pointer;
+
+                &:hover{
+                    background-color: white;
+                    color: black;
+                }
+            }
+
+            &:nth-child(1){
+                .bg{
+                    background-color: #369e62;
+                }
+
+                .price{
+                    color: #369e62;
+                }
+            }
+
+            &:nth-child(2){
+                .bg{
+                    background-color: rebeccapurple;
+                }
+
+                .price{
+                    color: white;
+                }
+            }
+
+            &:nth-child(3){
+                .bg{
+                    background-color: teal;
+                }
+
+                .price{
+                    color: teal;
+                }
+            }
+
+            &:nth-child(4){
+                .bg{
+                    background-color: cornflowerblue;
+                }
+
+                .price{
+                    color: cornflowerblue;
+                }
+            }
+
+            &:nth-child(5){
+                .bg{
+                    background-color: rgb(124,115,80);
+                }
+
+                .price{
+                    color: cornsilk;
+                }
+            }
+        }
+    }
+}
